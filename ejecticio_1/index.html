@@ -1,0 +1,22 @@
+<html >
+
+<script src="./calculador.js"></script>
+
+<script>
+    try {
+        const input = prompt("Ingrese los numeros separados por coma :");
+
+        if (!input) {
+            alert("No se ingresaron datos");
+        } else {
+            const promedio = calculador(input.split(','));
+
+            alert(`Array: [${input.split(", ")}] \nPromedio: ${promedio}`);
+        }
+
+    } catch (e) {
+        alert("ERROR: \n" + e.message);
+    }
+</script>
+
+</html>

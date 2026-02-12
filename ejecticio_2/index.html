@@ -1,0 +1,28 @@
+<html>
+
+<script src="./validator.js"></script>
+
+<script>
+    try {
+        const parejas = [{open: '(', close: ')', nombre: 'Parentesis'},
+            {open: '[', close: ']', nombre: 'Chorchetes'},
+            {open: '{', close: '}', nombre: 'llaves'}
+        ];
+
+
+        const input = prompt("Ingrese la cadena a validar:");
+
+        if (!input) {
+            alert("No se ingresaron datos");
+        } else {
+            const resultado = validator(parejas, input);
+
+            alert(`Cadena: ${input}\nValidacion: ${resultado ? "Correcta" : "Incorrecta"}`);
+        }
+
+    } catch (e) {
+        alert("ERROR:\n" + e.message);
+    }
+</script>
+
+</html>

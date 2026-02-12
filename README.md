@@ -1,6 +1,6 @@
-Pasos para prueba de ejecricio numero 3 y 4
+Pasos para prueba de ejercicio  numero 3 y 4
 
-Importar schema.sql a la base de datos 
+1- Importar schema.sql a la base de datos 
 
 
 CREATE DATABASE IF NOT EXISTS helvex;
@@ -17,5 +17,5 @@ CREATE TABLE contacts (
 
 
 
-Configurar el archivo "config.php" para al conexion a la base de datos
+2- Configurar el archivo "config.php" para al conexion a la base de datos
 
